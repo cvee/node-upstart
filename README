@@ -44,9 +44,14 @@ Upstart Job Definitions are are defined in files located in /etc/init. The name 
 
 As an added bonus, Upstart allows for services to be controlled manually using the commands <code>start</code>,  <code>stop</code> and <code>status</code>. For example, an administrator can start, stop and determine the status of the above job definition using the following commands:
 
-    start node-upstart
-    stop node-upstart
-    status node-upstart
+    $ start node-upstart
+    node-upstart start/running, process 3410
+    $ status node-upstart
+    node-upstart start/running, process 3410
+    $ stop node-upstart
+    node-upstart stop/waiting
+    $ status node-upstart
+    node-upstart stop/waiting
 
 # More Information
 
