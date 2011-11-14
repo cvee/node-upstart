@@ -91,13 +91,13 @@ After creating a job definition save the file to /etc/init. Then, use <code>init
 
 As an added bonus, Upstart allows for services to be controlled manually using the commands <code>start</code>,  <code>stop</code> and <code>status</code>. For example, an administrator can start, stop and determine the status of the above job definition using the following commands:
 
-    $ start node-upstart
+    $ sudo start node-upstart
     node-upstart start/running, process 3410
-    $ status node-upstart
+    $ sudo status node-upstart
     node-upstart start/running, process 3410
-    $ stop node-upstart
+    $ sudo stop node-upstart
     node-upstart stop/waiting
-    $ status node-upstart
+    $ sudo status node-upstart
     node-upstart stop/waiting
 
 # More Information
