@@ -110,10 +110,6 @@ As an added bonus, Upstart allows for services to be controlled manually using t
 
 * http://upstart.ubuntu.com/cookbook/
 
-## Runlevel
-
-* http://en.wikipedia.org/wiki/Runlevel
-
 ## Presentation and Examples
 
 * https://github.com/cvee/node-upstart
