@@ -40,6 +40,11 @@ Upstart Job Definitions are are defined in files located in /etc/init. The name 
     # Start the process
     exec start-stop-daemon --start --chuid node --make-pidfile --pidfile /var/opt/node/run/node-upstart.pid --exec /home/node/local/node/bin/node -- /home/node/apps/node-upstart.js >> /var/opt/node/log/node-upstart.log 2>&1
 
+After creating a job definition save the file to /etc/init. Then, use <code>initctl</code> to verify the job has been recognized by Upstart.
+
+    $ initctl list | grep node-upstart
+    node-upstart stop/waiting
+
 # Manual Job Control
 
 As an added bonus, Upstart allows for services to be controlled manually using the commands <code>start</code>,  <code>stop</code> and <code>status</code>. For example, an administrator can start, stop and determine the status of the above job definition using the following commands:
@@ -69,5 +74,5 @@ As an added bonus, Upstart allows for services to be controlled manually using t
 
 ## Chris Verwymeren
 
-cvee@me.com
-https://twitter.com/cvee
+* cvee@me.com
+* https://twitter.com/cvee
