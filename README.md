@@ -16,7 +16,7 @@ Upstart Job Definitions are are defined in files located in /etc/init. The name 
     #
     
     description     "Example Upstart job definition for a node.js based app"
-    author          "Chris Verwymeren <cvee@me.com>"
+    author          "Chris Verwymeren"
     
     # When to start the service
     start on runlevel [2345]
